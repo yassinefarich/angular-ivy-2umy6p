@@ -1,0 +1,27 @@
+<hello name="{{ name }}"></hello>
+
+<table>
+	<tr>
+		<td>Nombre de crowders : </td>
+		<td><input type="number" [(ngModel)] = "nombreDeCrowders"/></td>
+	</tr>
+	<tr>
+		<td>Nombre de pivots : </td>
+		<td><input type="number" [(ngModel)] = "nombreDePivots"/></td>
+	</tr>
+	<tr>
+		<td>Nombre de Propositions par pivot : </td>
+		<td><input type="number" [(ngModel)] = "nombreDePropositionsParPivots"/></td>
+	</tr>
+	<tr>
+		<td>Notation par proposition : </td>
+		<td><input type="number" [(ngModel)] = "nombreDeNotationParProposition"/></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><button (click)="calculer()" >Calculer</button></td>
+	</tr>
+
+</table>
+<br><br>
+<textarea [(ngModel)]="resultat" style="width:80%; height:150px">Résultat : </textarea>
